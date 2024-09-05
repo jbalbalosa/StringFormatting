@@ -1,6 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-            System.out.println(textBlock);
+   System.out.println("String Formatting!\n\n");
+        String bulletIt = "Print a Bulleted List \n" +
+                "\t\u2022 First \n" +
+                "\t\t\u2022 Sub Point";
+
+        System.out.println(bulletIt);
+        System.out.println();
+
+        String textBlock = """
+                Print a Bulleted List:
+                            \u2022 First Point
+                                \u2022 Sub Point""";
+
+        System.out.println(textBlock);
 
         int age = 35;
         System.out.printf("Your age is %d", age);
@@ -18,6 +31,5 @@ public class Main {
 
         formattedString = "your age is %d".formatted(age);
         System.out.println(formattedString);
-
     }
 }
